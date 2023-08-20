@@ -5,18 +5,23 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 20.08.2023
 //
-//  Status: in progress | Decorated
+//  
 //
 //  */
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var locationManager = LocationManager()
+    
     var body: some View {
         
         VStack {
-            
+            WelcomeView()
+                .environmentObject(locationManager)
         }
+        .background(Color("bg"))
     }
 }
 
