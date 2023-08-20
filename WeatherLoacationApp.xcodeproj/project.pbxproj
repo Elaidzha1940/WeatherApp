@@ -11,6 +11,7 @@
 		E4E7771E2A92399F00106E99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7771D2A92399F00106E99 /* ContentView.swift */; };
 		E4E777202A92399F00106E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E7771F2A92399F00106E99 /* Assets.xcassets */; };
 		E4E777242A92399F00106E99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E777232A92399F00106E99 /* Preview Assets.xcassets */; };
+		E4E7772C2A923EB500106E99 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7772B2A923EB500106E99 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E4E7771F2A92399F00106E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4E777212A92399F00106E99 /* WeatherLoacationApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherLoacationApp.entitlements; sourceTree = "<group>"; };
 		E4E777232A92399F00106E99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4E7772B2A923EB500106E99 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E4E7771B2A92399F00106E99 /* WeatherLoacationAppApp.swift */,
 				E4E7771D2A92399F00106E99 /* ContentView.swift */,
+				E4E7772A2A923E9F00106E99 /* Managers */,
 				E4E7771F2A92399F00106E99 /* Assets.xcassets */,
 				E4E777212A92399F00106E99 /* WeatherLoacationApp.entitlements */,
 				E4E777222A92399F00106E99 /* Preview Content */,
@@ -67,6 +70,14 @@
 				E4E777232A92399F00106E99 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4E7772A2A923E9F00106E99 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E4E7772B2A923EB500106E99 /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			files = (
 				E4E7771E2A92399F00106E99 /* ContentView.swift in Sources */,
 				E4E7771C2A92399F00106E99 /* WeatherLoacationAppApp.swift in Sources */,
+				E4E7772C2A923EB500106E99 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
