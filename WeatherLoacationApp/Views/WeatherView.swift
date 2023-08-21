@@ -77,6 +77,14 @@ struct WeatherView: View {
                 
                 VStack(alignment: .leading, spacing: 20) {
                      
+                    Text("Weather now")
+                        .font(.system(size: 20, weight: .bold, design: .serif))
+                        .padding(.bottom)
+
+                    HStack {
+                        
+                        WeatherRow(logo: "thermometer", name: "Min temp", value: (weather.main.tempMin.rounDouble() + "°"))
+                    }
                     
                 }
                 .frame(minWidth: .infinity, alignment: .leading)
