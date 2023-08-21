@@ -27,3 +27,44 @@ class WeatherManager {
         
     }
 }
+
+struct ResponseBody: Decodable {
+    
+    var coord: CoordinatesRespone
+    var weather: [WeatherRespone]
+    var main: MainRespone
+    var name: String
+    var wind: WindRespone
+    
+    struct CoordinatesRespone: Decodable {
+        
+        var lon: Double
+        var lan: Double
+    }
+    
+    struct WeatherRespone: Decodable {
+        
+        var id: Double
+        var main: String
+        var description: String
+        var icon: String
+    }
+    
+    struct MainRespone: Decodable {
+        
+        var temp: Double
+        var feels_like: Double
+        var temp_main: Double
+        var temp_max: Double
+        var pressure: Double
+        var humidity: Double
+    }
+    
+    struct WindRespone: Decodable {
+        
+        var speed: Double
+        var deg: Double
+    }
+}
+
+extension
