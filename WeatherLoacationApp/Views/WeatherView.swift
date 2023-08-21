@@ -65,7 +65,6 @@ struct WeatherView: View {
                     
                     Spacer()
                     
-                    
                 }
                 .frame(maxWidth: .infinity)
             }
