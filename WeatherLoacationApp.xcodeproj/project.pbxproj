@@ -16,6 +16,7 @@
 		E4E777312A924A7700106E99 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E777302A924A7700106E99 /* LoadingView.swift */; };
 		E4E777332A9262AE00106E99 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E777322A9262AE00106E99 /* WeatherManager.swift */; };
 		E4E777352A93779200106E99 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E777342A93779200106E99 /* WeatherView.swift */; };
+		E4E777372A93785B00106E99 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E777362A93785B00106E99 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E4E777302A924A7700106E99 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E4E777322A9262AE00106E99 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		E4E777342A93779200106E99 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		E4E777362A93785B00106E99 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				E4E777232A92399F00106E99 /* Preview Assets.xcassets */,
+				E4E777362A93785B00106E99 /* ModelData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				E4E7771C2A92399F00106E99 /* WeatherLoacationAppApp.swift in Sources */,
 				E4E7772C2A923EB500106E99 /* LocationManager.swift in Sources */,
 				E4E777312A924A7700106E99 /* LoadingView.swift in Sources */,
+				E4E777372A93785B00106E99 /* ModelData.swift in Sources */,
 				E4E777352A93779200106E99 /* WeatherView.swift in Sources */,
 				E4E7772F2A92455B00106E99 /* WelcomeView.swift in Sources */,
 			);
