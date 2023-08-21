@@ -68,6 +68,7 @@
 		E4E7771A2A92399F00106E99 /* WeatherLoacationApp */ = {
 			isa = PBXGroup;
 			children = (
+				E4E9CAD22A938E7E00BCD09C /* Components */,
 				E4E7771B2A92399F00106E99 /* WeatherLoacationAppApp.swift */,
 				E4E7772D2A9244CF00106E99 /* Views */,
 				E4E7772A2A923E9F00106E99 /* Managers */,
@@ -107,6 +108,13 @@
 				E4E777342A93779200106E99 /* WeatherView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E4E9CAD22A938E7E00BCD09C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
