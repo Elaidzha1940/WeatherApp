@@ -11,7 +11,6 @@
 
 import Foundation
 import CoreLocation
-//727faf1bd3a72565b4c76a30128f3371
 
 class WeatherManager {
     
@@ -30,6 +29,8 @@ class WeatherManager {
         return decodeData
     }
 }
+
+// Model of the response body we get from calling the OpenWeather API
 
 struct ResponseBody: Decodable {
     
@@ -74,4 +75,5 @@ extension ResponseBody.MainRespone {
     
     var feelsLike: Double { return feels_like }
     var tempMin: Double { return temp_min }
+    var tempMax: Double { return temp_max }
 }
