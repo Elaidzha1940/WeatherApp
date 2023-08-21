@@ -39,7 +39,7 @@ struct WeatherView: View {
                                 .font(.system(size: 30, weight: .bold, design: .serif))
                             
                             Text(weather.weather[0].main)
-
+                            
                         }
                         .frame(width: 150, alignment: .leading)
                         
@@ -48,8 +48,24 @@ struct WeatherView: View {
                         Text(weather.main.feelsLike.rounDouble() + "°")
                             .font(.system(size: 70, weight: .bold, design: .serif))
                             .padding()
-                        
                     }
+                    
+                    Spacer()
+                        .frame(height: 80)
+                    
+                    AsyncImage(url: URL(string: "https://www.myglobalviewpoint.com/wp-content/uploads/2019/05/Cheapest-cities-in-Europe-you-should-visit-featured-image.jpg")) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 350)
+                        
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    
+                    Spacer()
+                    
+                    
                 }
                 .frame(maxWidth: .infinity)
             }
@@ -59,7 +75,7 @@ struct WeatherView: View {
         .edgesIgnoringSafeArea(.bottom)
         .background(Color("bg"))
         .preferredColorScheme(.dark)
-
+        
     }
 }
 
