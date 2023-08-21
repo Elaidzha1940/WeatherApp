@@ -17,10 +17,21 @@ struct WeatherView: View {
     
     var body: some View {
         
-        VStack {
+        ZStack(alignment: .leading) {
             
-            
+            VStack {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(weather.name)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .edgesIgnoringSafeArea(.bottom)
+        .background(Color("bg"))
+        .preferredColorScheme(.dark)
+
     }
 }
 
