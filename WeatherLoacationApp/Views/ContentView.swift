@@ -28,13 +28,12 @@ struct ContentView: View {
                     LoadingView()
                         .task {
                             do {
-                               weather = try await weatherManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                                weather = try await weatherManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
                             } catch {
                                 print("Error getting weather: \(error)")
                             }
                         }
                 }
-//                Text("Your coordinates are: \(location.longitude), \(location.latitude)")
             } else {
                 if locationManager.isLoading {
                     LoadingView()

@@ -22,8 +22,36 @@ struct WeatherView: View {
             VStack {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(weather.name)
+                        .font(.system(size: 30, weight: .bold, design: .serif))
+                    
+                    Text("Today, \(Date().formatted(.dateTime.month().day().hour().minute()))")
+                        .fontWeight(.light)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Spacer()
+                
+                VStack {
+                    HStack {
+                        VStack(spacing: 20) {
+                            
+                            Image(systemName: "cloud.sun.fill")
+                                .font(.system(size: 30, weight: .bold, design: .serif))
+                            
+                            Text(weather.weather[0].main)
+
+                        }
+                        .frame(width: 150, alignment: .leading)
+                        
+                        Spacer()
+                        
+                        Text(weather.main.feelsLike.rounDouble() + "°")
+                            .font(.system(size: 70, weight: .bold, design: .serif))
+                            .padding()
+                        
+                    }
+                }
+                .frame(maxWidth: .infinity)
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
